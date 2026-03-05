@@ -51,18 +51,27 @@
             <div class="logo">
                 <img src="assets/OfficeLogo.png" alt="Beats Learning Logo" />
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Apprenticeship</a></li>
-                    <li><a href="#">More</a></li>
-                </ul>
-            </nav>
-            <div class="auth-buttons">
-                <button class="btn-signin" type="button">Sign In</button>
-                <button class="btn-login" type="button">Login</button>
+
+            <input type="checkbox" id="nav-toggle" class="nav-checkbox" hidden>
+            <label for="nav-toggle" class="nav-toggle-btn">
+                <i class="fa-solid fa-bars menu-open"></i>
+                <i class="fa-solid fa-xmark menu-close"></i>
+            </label>
+
+            <div class="nav-wrapper">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Apprenticeship</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn-signin" type="button">Sign In</button>
+                    <button class="btn-login" type="button">Login</button>
+                </div>
             </div>
         </header>
     </div>
