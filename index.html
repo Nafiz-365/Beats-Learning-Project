@@ -1,98 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beats Learning | Professional Online Training</title>
+        <meta
+            name="description"
+            content="Professional online learning platform with expert-led courses, practical training, and career-focused coaching."
+        />
+        <meta
+            name="keywords"
+            content="online learning, professional courses, music courses, digital education, training platform"
+        />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Nafiz Kamal Talha" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="assets/style.css" />
+        <meta property="og:title" content="Beats Learning" />
+        <meta
+            property="og:description"
+            content="Professional online learning platform with expert-led courses and flexible training."
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+    </head>
 
-    <!-- Title -->
-    <title>Beats Learning</title>
+    <body>
+        <header class="header">
+            <div class="header-area">
+                <a
+                    href="#home"
+                    class="logo"
+                    aria-label="Beats Learning home page"
+                >
+                    <img
+                        src="assets/OfficeLogo.png"
+                        alt="Beats Learning Logo"
+                    />
+                </a>
 
-    <!-- Meta Description & Keywords -->
-    <meta name="description" content="*!Short description of the website.!*" />
-    <meta name="keywords" content="*!keywords, for, website!*" />
+                <input
+                    type="checkbox"
+                    id="nav-toggle"
+                    class="nav-checkbox"
+                    hidden
+                />
+                <label
+                    for="nav-toggle"
+                    class="nav-toggle-btn"
+                    aria-label="Toggle navigation menu"
+                >
+                    <i class="fa-solid fa-bars menu-open"></i>
+                    <i class="fa-solid fa-xmark menu-close"></i>
+                </label>
 
-    <!-- Author -->
-    <meta name="author" content="Nafiz Kamal Talha" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="*!assets/favicon.png!*" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="*!assets/favicon-32x32.png!*" />
-    <link rel="icon" type="image/png" sizes="16x16" href="*!assets/favicon-16x16.png!*" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/style.css" />
-
-    <!-- Open Graph / Social Meta -->
-    <meta property="og:title" content="*!Website Title!*" />
-    <meta property="og:description" content="*!Short description of the website!*" />
-    <meta property="og:image" content="*!assets/preview.png!*" />
-    <meta property="og:url" content="*!https://yourwebsite.com!*" />
-    <meta name="twitter:card" content="summary_large_image" />
-</head>
-
-<body>
-    <!-- ===== HEADER START ===== -->
-    <div class="header">
-        <header class="header-area">
-            <div class="logo">
-                <img src="assets/OfficeLogo.png" alt="Beats Learning Logo" />
-            </div>
-
-            <input type="checkbox" id="nav-toggle" class="nav-checkbox" hidden>
-            <label for="nav-toggle" class="nav-toggle-btn">
-                <i class="fa-solid fa-bars menu-open"></i>
-                <i class="fa-solid fa-xmark menu-close"></i>
-            </label>
-
-            <div class="nav-wrapper">
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Apprenticeship</a></li>
-                        <li><a href="#">More</a></li>
-                    </ul>
-                </nav>
-                <div class="auth-buttons">
-                    <button class="btn-signin" type="button">Sign In</button>
-                    <button class="btn-login" type="button">Login</button>
+                <div class="nav-wrapper">
+                    <nav class="nav-menu" aria-label="Main navigation">
+                        <ul>
+                            <li><a class="active" href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li>
+                                <a href="#apprenticeship">Apprenticeship</a>
+                            </li>
+                            <li><a href="#contact">More</a></li>
+                        </ul>
+                    </nav>
+                    <div class="auth-buttons">
+                        <button class="btn-signin" type="button">
+                            Sign In
+                        </button>
+                        <button class="btn-login" type="button">
+                            Enroll Now
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
-    </div>
-    <!-- ===== HEADER END ===== -->
 
-    <!-- ===== MAIN CONTENT START ===== -->
-    <div class="main">
         <main class="main-content">
-            <!-- Hero Section -->
-            <section class="hero">
+            <section class="hero" id="home">
                 <div class="hero-text">
-                    <h4>TRAINING TO SUCCEED</h4>
+                    <p class="eyebrow">Training to succeed</p>
                     <h1>Believe and you can <span>achieve</span></h1>
-                    <p>
-                        Learn any skill from comfort of your home Anywhere -
-                        and Anytime - for only $10.
+                    <p class="hero-copy">
+                        Learn practical, career-focused skills from anywhere, at
+                        your own pace, with industry-ready guidance and flexible
+                        online support.
                     </p>
-                    <a href="#" class="apply-now">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="hero-actions">
+                        <a href="#courses" class="apply-now"
+                            >Apply Now <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                        <a href="#about" class="secondary-link"
+                            >Why Choose Us</a
+                        >
+                    </div>
+                    <div
+                        class="hero-stats"
+                        aria-label="Key learning statistics"
+                    >
+                        <div>
+                            <strong>12k+</strong>
+                            <span>Students</span>
+                        </div>
+                        <div>
+                            <strong>96%</strong>
+                            <span>Success rate</span>
+                        </div>
+                        <div>
+                            <strong>4.9/5</strong>
+                            <span>Reviews</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-images">
-                    <img src="assets/SittingGirl.png" alt="Student learning online" />
+
+                <div class="hero-images" aria-label="Student illustration">
+                    <img
+                        src="assets/SittingGirl.png"
+                        alt="Student learning online"
+                    />
                     <img src="assets/SurroundingIcon1.png" alt="" />
                     <img src="assets/SurroundingIcon2.png" alt="" />
                     <img src="assets/SurroundingIcon3.png" alt="" />
@@ -101,217 +141,257 @@
                 </div>
             </section>
 
-            <!-- Info Boxes Section -->
-            <section class="info-section">
+            <section class="info-section" id="about">
                 <div class="info-cards">
                     <div class="info-card">
-                        <img src="assets/Group 4302.png" alt="Admission Complete" />
+                        <img
+                            src="assets/Group 4302.png"
+                            alt="Admission Complete"
+                        />
                         <h6>Congratulations</h6>
-                        <p>Your admission completed</p>
+                        <p>Your admission is complete.</p>
                     </div>
+
                     <div class="info-card course">
                         <img src="assets/BoxImage.png" alt="Music Course" />
-
                         <h5>Music Mastery</h5>
                         <p>Basic to higher level</p>
                         <p>Class 01</p>
                         <span>Class 01 | Today 7PM - 9PM</span>
-                        <a href="#" class="btn-join">JOIN NOW</a>
+                        <a href="#courses" class="btn-join">Join Now</a>
                     </div>
+
                     <div class="info-card stats">
-                        <h6>Teachers Statistics</h6>
-
-                        <div class="stats-image"></div>
-
+                        <h6>Teacher Statistics</h6>
+                        <div class="stats-image" aria-hidden="true"></div>
                         <div class="stats-details">
                             <div>
                                 <h5>30%</h5>
-                                <p>Other Sectors</p>
+                                <p>Other sectors</p>
                             </div>
                             <div>
                                 <h5>70%</h5>
-                                <p>IT Sector</p>
+                                <p>IT sector</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="info-description">
-                    <h3>Get the Best Class by the Best Teachers</h3>
-                    <p>
-                        Get your best class and gain the great thing from
-                        the best and well qualified experienced teachers all
-                        over the world and get shinny. We are a unique
-                        training provider willing to give you all the skills
-                        and experience you need to fulfil your future career
-                    </p>
 
-                    <a href="#" class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="info-description">
+                    <h3>Get the best class from expert teachers.</h3>
+                    <p>
+                        We connect learners with experienced instructors and a
+                        modern, supportive learning environment designed to help
+                        you build confidence, sharpen skills, and move
+                        confidently toward your career goals.
+                    </p>
+                    <a href="#courses" class="read-more"
+                        >Read more <i class="fa-solid fa-arrow-right"></i
+                    ></a>
                 </div>
             </section>
 
-            <!-- Services Section -->
-            <section class="services">
+            <section class="services" id="apprenticeship">
                 <div class="service-item">
                     <img src="assets/Icon.png" alt="" />
-                    <h4>Experienced Teacher</h4>
+                    <h4>Experienced Instructors</h4>
                     <p>
-                        We teach in small groups with experienced,
-                        supportive staff who are trained to understand some
-                        of the problems our students face.
+                        Small-group teaching, practical mentorship, and
+                        structured support designed around your learning needs.
                     </p>
                 </div>
                 <div class="service-item">
                     <img src="assets/Icon (1).png" alt="" />
                     <h4>Progressive Learning</h4>
                     <p>
-                        Our mission is to use our knowledge, skills, and
-                        networks to equip people with multiple disadvantages
-                        with the skills to gain and sustain employment.
+                        Structured pathways that build skills step by step and
+                        help you stay motivated while progressing faster.
                     </p>
                 </div>
                 <div class="service-item">
                     <img src="assets/Icon (2).png" alt="" />
-                    <h4>Graduate and job ready</h4>
+                    <h4>Career Readiness</h4>
                     <p>
-                        We are a unique training provider willing to give
-                        you all the skills and experience you need to fulfil
-                        your future career.
+                        Real-world learning experiences that help you stay
+                        job-ready and confident in your next opportunity.
                     </p>
                 </div>
             </section>
 
-            <!-- Featured Courses Section -->
-            <section class="featured-courses">
+            <section class="featured-courses" id="courses">
                 <div class="section-header">
-                    <h3>Featured Course</h3>
-                    <p>Everything you need to when you're looking</p>
+                    <p class="eyebrow eyebrow-center">
+                        Featured learning paths
+                    </p>
+                    <h3>Choose a course that fits your future</h3>
+                    <p>
+                        Everything you need to begin your next step with
+                        confidence.
+                    </p>
                 </div>
                 <div class="course-grid">
                     <article class="course-card">
                         <img src="assets/image1.png" alt="Web Development" />
-                        <h6>A Complete Web development</h6>
+                        <h6>A Complete Web Development</h6>
                         <p>Technology</p>
                         <div class="course-meta">
-                            <span><i class="fa-solid fa-hand-holding-dollar"></i>$450</span>
-                            <span><i class="fa-solid fa-tv"></i>23.5 hours</span>
-                            <span><i class="fa-solid fa-file"></i>52 Articles</span>
+                            <span
+                                ><i class="fa-solid fa-hand-holding-dollar"></i
+                                >$450</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-tv"></i>23.5 hours</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-file"></i>52
+                                Articles</span
+                            >
                         </div>
                     </article>
 
                     <article class="course-card">
                         <img src="assets/image2.png" alt="Music Production" />
                         <h6>Music Production Course</h6>
-                        <p>Music & Sounding</p>
+                        <p>Music & Sound</p>
                         <div class="course-meta">
-                            <span><i class="fa-solid fa-hand-holding-dollar"></i>$320</span>
-                            <span><i class="fa-solid fa-tv"></i>18.5 hours</span>
-                            <span><i class="fa-solid fa-file"></i>27 Articles</span>
+                            <span
+                                ><i class="fa-solid fa-hand-holding-dollar"></i
+                                >$320</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-tv"></i>18.5 hours</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-file"></i>27
+                                Articles</span
+                            >
                         </div>
                     </article>
 
                     <article class="course-card">
-                        <img src="assets/image3.png" alt="Personality Development" />
+                        <img
+                            src="assets/image3.png"
+                            alt="Personality Development"
+                        />
                         <h6>Personality Development</h6>
                         <p>Personal Growth</p>
                         <div class="course-meta">
-                            <span><i class="fa-solid fa-hand-holding-dollar"></i>$620</span>
-                            <span><i class="fa-solid fa-tv"></i>32.3 hours</span>
-                            <span><i class="fa-solid fa-file"></i>37 Articles</span>
+                            <span
+                                ><i class="fa-solid fa-hand-holding-dollar"></i
+                                >$620</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-tv"></i>32.3 hours</span
+                            >
+                            <span
+                                ><i class="fa-solid fa-file"></i>37
+                                Articles</span
+                            >
                         </div>
                     </article>
                 </div>
             </section>
 
-            <!-- Trial Section -->
             <section class="trial">
                 <div class="trial-content">
-                    <p>SIMPLE LEARNING PLATFORM</p>
+                    <p>Simple learning platform</p>
                     <h2>A quality place for distance learning</h2>
                     <p>
-                        A best and cheapest way of getting know learning to
-                        make a better tomorrow
+                        A smarter, more affordable way to learn and build a
+                        stronger tomorrow with expert support and flexible study
+                        options.
                     </p>
-                    <a href="#" class="btn-primary">Start Free Trial</a>
+                    <a href="#contact" class="btn-primary">Start Free Trial</a>
                 </div>
                 <div class="trial-image">
-                    <img src="assets/Images.png" alt="Distance Learning" />
+                    <img
+                        src="assets/Images.png"
+                        alt="Distance learning student"
+                    />
                 </div>
             </section>
 
-            <!-- Newsletter Section -->
-            <section class="newsletter">
+            <section class="newsletter" id="contact">
                 <div class="newsletter-content">
-                    <h5>NEWSLETTER</h5>
-                    <h2>Subscribe Our Newsletter</h2>
+                    <h5>Newsletter</h5>
+                    <h2>Subscribe to stay updated</h2>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email..." required />
-                        <button type="submit">→</button>
+                        <input
+                            type="email"
+                            placeholder="Enter your email..."
+                            aria-label="Email address"
+                            required
+                        />
+                        <button type="submit" aria-label="Submit newsletter">
+                            →
+                        </button>
                     </form>
                 </div>
 
                 <div class="newsletter-chat">
                     <div class="chat-card">
-                        <div class="chat-question">
-                            Why should I need your newsletter
-                        </div>
+                        <div class="chat-question">Why should I subscribe?</div>
                         <div class="chat-answer">
-                            Because we always want our students to be
-                            updated with latest information. 😊
-                            <div class="chat-avatar"></div>
+                            Because we share practical learning updates, fresh
+                            courses, and useful tips to help you grow.
+                            <div class="chat-avatar" aria-hidden="true"></div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-    </div>
-    <!-- ===== MAIN CONTENT END ===== -->
 
-    <!-- ===== FOOTER START ===== -->
-    <div class="footer">
         <footer class="footer-area">
             <div>
                 <h4>Pages</h4>
                 <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>About Us</li>
-                    <li><a href="#"></a>Courses</li>
-                    <li><a href="#"></a>Blog</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Blog</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Resources</h4>
                 <ul>
-                    <li><a href="#"></a>Our Homes</li>
-                    <li><a href="#"></a>Member Stories</li>
-                    <li><a href="#"></a>Video</li>
-                    <li><a href="#"></a>Free trial</li>
+                    <li><a href="#">Our Homes</a></li>
+                    <li><a href="#">Member Stories</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Free Trial</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#"></a>Partnerships</li>
-                    <li><a href="#"></a>Terms of use</li>
-                    <li><a href="#"></a>Privacy</li>
-                    <li><a href="#"></a>Sitemap</li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
                 </ul>
             </div>
+
             <div class="social-links">
                 <h4>Find us at</h4>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" aria-label="Instagram"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" aria-label="LinkedIn"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
                 </div>
                 <div class="footer-map">
-                    <img src="assets/Map.png" alt="Beats Learning Map Location" />
+                    <img
+                        src="assets/Map.png"
+                        alt="Beats Learning Map Location"
+                    />
                 </div>
             </div>
         </footer>
-    </div>
-    <!-- ===== FOOTER END ===== -->
-</body>
-
+    </body>
 </html>
